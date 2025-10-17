@@ -835,9 +835,9 @@ textarea::placeholder {
 }
 
 /*--------------------------------------------------------------
-# Preloader
+# Preloader (original do tema)
 --------------------------------------------------------------*/
-#preloader {
+/* #preloader {
   position: fixed;
   inset: 0;
   z-index: 9999;
@@ -868,6 +868,41 @@ textarea::placeholder {
     transform: rotate(360deg);
   }
 }
+  */
+
+
+  /*--------------------------------------------------------------
+# Preloader com ícone girando (bi-gear-wide)
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+  transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+}
+
+#preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Ícone girando */
+#preloader .rotate {
+  font-size: 4rem; /* tamanho do ícone */
+  /* color: var(--accent-color); /* cor laranja padrão do tema */ */
+  color:#000;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 
 /*--------------------------------------------------------------
 # Scroll Top Button
