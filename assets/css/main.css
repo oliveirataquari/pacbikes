@@ -772,6 +772,10 @@ h6 {
   }
 }
 
+.footer-bottom-links b {
+  color: orange;
+}
+
 .footer .footer-bottom .credits {
   text-align: right;
   font-size: 13px;
