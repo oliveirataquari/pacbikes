@@ -42,7 +42,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0" style="width: 100px;">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logo.png" alt="">
         <!-- <h1 class="sitename">Strive</h1><span>.</span> -->
@@ -50,35 +50,16 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#hero" class="active">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#features">Produtos e Serviços</a></li>
+          <li><a href="#portfolio">Redes sociais</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="#about">Get Started</a>
+      <a class="cta-btn" href="#about" style="background-color:#21B859;font-weight: 700; font-size: 17px;"><i class="bi bi-whatsapp"></i> (51)98019.6163</a>
 
     </div>
   </header>
@@ -92,15 +73,15 @@
         <div class="container">
           <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-8 text-center">
-              <h2>Há 40 anos a sua melhor pedalada é a nossa satisfação</h2>
-              <p>Bicicletas, peças, vestuário, sinalizações e transbike.</p>
+              <h2>Sua melhor pedalada é a nossa satisfação!</h2>
+              <p>Bicicletas, peças, vestuário, acessórios, sinalizações, transbike e muito mais!.</p>
               <a href="#about" class="btn-get-started">Conheça aqui</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
 
         <div class="carousel-item">
           <img src="assets/img/slider/slide-01.jpg" alt="">
@@ -142,15 +123,19 @@
 
     </section><!-- /Hero Section -->
 
+
+    <!-- Section Logox (logo maior no meio) -->
+    <div class="container logox"  >
+      <img src="assets/img/logo.png" class="img-fluid" alt="">
+    </div><!-- End Section Logox -->
+
     <!-- About Section -->
     <section id="about" class="about section">
 
       <!-- Section Title -->
       <div class="container section-title hide">
-        <h2>Ponto Amigo do Ciclista</h2>
-        <p>Fundada em 1985, a PAC Bikes nasceu com o propósito de levar qualidade e confiança ao mundo das bicicletas. O que começou como uma pequena oficina de bairro, dedicada a reparos simples e à venda de peças, cresceu ao longo de quatro décadas e se tornou referência em bikes, acessórios e serviços especializados.
-          Ao longo desses 40 anos, acompanhamos de perto a evolução do ciclismo no Brasil — das primeiras bicicletas de passeio às mais modernas bikes de alto desempenho. Sempre mantendo o compromisso de oferecer atendimento personalizado, produtos de qualidade e soluções completas para ciclistas iniciantes e profissionais.
-          Mais do que uma loja, somos apaixonados por duas rodas. Nossa missão é incentivar o uso da bicicleta como estilo de vida, meio de transporte e esporte, proporcionando a cada cliente segurança, performance e prazer ao pedalar.</p>
+        <!-- <h2>Ponto Amigo do Ciclista</h2>
+        <p>Texto ...</p> -->
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -158,9 +143,9 @@
         <div class="row g-5 align-items-center">
           <div class="col-lg-6 position-relative">
             <div class="about-img" data-aos="fade-right">
-              <img src="assets/img/about/about-portrait-2.webp" class="img-fluid" alt="">
+              <img src="assets/img/about/fachada-1.jpg" class="img-fluid" alt="">
             </div>
-            <div class="experience-badge" data-aos="fade-up">
+            <div class="experience-badge hide" data-aos="fade-up">
               <!-- <h2>Venha conhecer!</h2> -->
               <p>Venha conhecer!</p>
             </div>
@@ -171,69 +156,18 @@
           </div>
 
           <div class="col-lg-6" data-aos="fade-left">
-            <h2 class="display-4 fw-bold mb-4">Ponto Amigo do Ciclista</h2>
-            <p class="lead mb-4">Há mais de 40 anos, a PAC-Bikes é referência em bicicletas, peças e acessórios para todo tipo de ciclista. Oferecemos produtos de qualidade e serviços especializados, que garantem a melhor experiência sobre duas rodas.</p>
-
-            <div class="features">
-              <div class="feature-item mb-4" data-aos="fade-up">
-                <div class="feature-icon">
-                  <i class="bi bi-bicycle"></i>
-                </div>
-                <div class="feature-content">
-                  <h4>Bicicletas novas, usadas e antigas</h4>
-                  <p>Do passeio ao alto desempenho, temos bikes para todos os estilos, incluindo modelos clássicos que marcaram época.</p>
-                </div>
-              </div>
-
-              <div class="feature-item mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-icon">
-                  <i class="bi bi-gear-wide"></i>
-                </div>
-                <div class="feature-content">
-                  <h4>Peças e acessórios</h4>
-                  <p>Uma linha completa de componentes, equipamentos e acessórios para manter sua bicicleta sempre pronta e segura.</p>
-                </div>
-              </div>
-
-              <div class="feature-item mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="feature-icon">
-                  <i class="bi bi-emoji-sunglasses"></i>
-                </div>
-                <div class="feature-content">
-                  <h4>Vestuário e segurança</h4>
-                  <p>Capacetes, luvas, roupas técnicas e equipamentos de proteção que unem conforto, estilo e segurança em cada pedalada.</p>
-                </div>
-              </div>
-
-              <div class="feature-item mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="feature-icon">
-                  <i class="bi bi-palette"></i>
-                </div>
-                <div class="feature-content">
-                  <h4>Customizações e pinturas</h4>
-                  <p>Personalize sua bike com cores, detalhes e acabamentos exclusivos, deixando ela do jeito que você sempre sonhou.</p>
-                </div>
-              </div>
-
-              <div class="feature-item mb-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="feature-icon">
-                  <i class="bi bi-tools"></i>
-                </div>
-                <div class="feature-content">
-                  <h4>Serviços</h4>
-                  <p>Montagem, regulagem e manutenção especializada para garantir máxima performance e durabilidade da sua bicicleta.</p>
-                </div>
-              </div>
-
+            <h2 class="display-4 fw-bold mb-4">Desde 1982</h2>
+            <p>A PAC Bikes nasceu com o propósito de levar soluções aos ciclistas da cidade de Taquari. O que começou como uma pequena oficina de bairro, dedicada a reparos simples e à venda de peças, cresceu ao longo de quatro décadas e se tornou referência em bikes, acessórios e serviços especializados na cidade.</p><p>Mantemos o compromisso de oferecer atendimento personalizado, produtos de qualidade e soluções completas para ciclistas iniciantes até os mais experientes. Mais do que uma loja, somos apaixonados por duas rodas.</p><p>Nossa missão é incentivar o uso da bicicleta como estilo de vida, meio de transporte e esporte, proporcionando a cada cliente segurança, performance e prazer ao pedalar.</p>
+            <!-- <p class="lead mb-4">Há mais de 40 anos, a PAC-Bikes é referência em bicicletas, peças e acessórios para todo tipo de ciclista. Oferecemos produtos de qualidade e serviços especializados, que garantem a melhor experiência sobre duas rodas.</p> -->
               <!-- 
               <ul class="check-list" data-aos="fade-up" data-aos-delay="200">
                 <li><i class="bi bi-check-circle"></i> Phasellus viverra nulla ut metus varius laoreet quisque rutrum aenean.</li>
                 <li><i class="bi bi-check-circle"></i> Etiam ultricies nisi vel augue curabitur ullamcorper ultricies nisi nam.</li>
               </ul>
-            -->
-
+              -->
               <!-- <a href="#" class="btn btn-primary btn-lg mt-4" data-aos="fade-up" data-aos-delay="300">Learn More</a> -->
-            </div>
+          </div>
+
           </div>
         </div>
 
@@ -242,7 +176,7 @@
     </section><!-- /About Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section">
+    <section id="services" class="services section hide">
 
       <!-- Section Title -->
       <div class="container section-title hide">
@@ -255,11 +189,11 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="services-content" data-aos="fade-left" data-aos-duration="900">
-              <span class="subtitle">Professional Services</span>
+              <!-- <span class="subtitle">Professional Services</span> -->
               <h2>Elevating Business Performance Through Strategic Solutions</h2>
               <p data-aos="fade-right" data-aos-duration="800">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius risus sed pellentesque auctor. Phasellus gravida magna at tortor cursus, sit amet suscipit tortor malesuada.</p>
               <div class="mt-4" data-aos="fade-right" data-aos-duration="1100">
-                <a href="service-details.html" class="btn-consultation"><span>Request a Consultation</span><i class="bi bi-arrow-right"></i></a>
+              <!-- <a href="service-details.html" class="btn-consultation"><span>Request a Consultation</span><i class="bi bi-arrow-right"></i></a> -->
               </div>
             </div>
           </div>
@@ -391,64 +325,6 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="cta-content">
-              <div class="badge mb-3">
-                <i class="bi bi-rocket-takeoff"></i>
-                Transform Your Business
-              </div>
-              <h2>Ready to Scale Your Corporate Operations?</h2>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-            <div class="features-list mb-4">
-              <div class="feature-item">
-                <i class="bi bi-check-circle-fill"></i>
-                <span>Advanced Analytics Dashboard</span>
-              </div>
-              <div class="feature-item">
-                <i class="bi bi-check-circle-fill"></i>
-                <span>24/7 Enterprise Support</span>
-              </div>
-              <div class="feature-item">
-                <i class="bi bi-check-circle-fill"></i>
-                <span>Custom Integration Solutions</span>
-              </div>
-            </div>
-
-            <div class="cta-buttons">
-              <a href="#" class="btn btn-primary">Start Free Trial</a>
-              <a href="#" class="btn btn-outline">Schedule Demo</a>
-            </div>
-
-            <div class="trust-indicators mt-4">
-              <small class="text-muted">Trusted by 500+ companies worldwide</small>
-              <div class="rating">
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <span class="ms-2">4.9/5 (2,300+ reviews)</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
     <!-- Features Section -->
     <section id="features" class="features section">
 
@@ -457,20 +333,26 @@
         <div class="row">
           <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
             <div class="features-content">
-              <h2>Powerful Features for Modern Business</h2>
-              <p>Streamline your operations with our comprehensive suite of business tools designed to boost productivity and drive growth.</p>
+              <h2 class="text-white">Produtos e serviços</h2>
+             <!-- <p>A PAC-Bikes é referência em bicicletas, peças e acessórios para todo tipo de ciclista. Oferecemos produtos de qualidade e serviços especializados, que garantem a melhor experiência sobre duas rodas.</p> -->
 
               <div class="main-feature">
                 <div class="feature-icon">
-                  <i class="bi bi-rocket-takeoff"></i>
+                  <i class="bi bi-tools"></i>
                 </div>
                 <div class="feature-text">
-                  <h4>Lightning Fast Performance</h4>
-                  <p>Experience blazing fast loading times and seamless user interactions that keep your team productive.</p>
+                  <h4>Mão na massa!</h4>
+                  <p>Em nossa oficina, cada bicicleta recebe o cuidado que merece. Contamos com uma equipe especializada e utilizamos apenas ferramentas profissionais, garantindo ajustes precisos e sem improvisos.</p> <p>Oferecemos serviços completos de montagem, regulagem e manutenção, além de reparos rápidos para que você nunca fique parado.</p> <p>Trabalhamos com produtos de limpeza e lubrificação de alta qualidade, prolongando a vida útil da sua bike e proporcionando a melhor performance a cada pedalada.</p>
                 </div>
               </div><!-- End Main Feature -->
 
-              <a href="#" class="btn-get-started">Get Started Today</a>
+              <div class="">
+                </div>
+                <div class="feature-text">
+                  <h5 class="text-white"><strong><i class="bi bi-asterisk" style="color:orange"></i> Buscamos e entregamos sua bike em casa!</strong></h5>
+              </div><!-- End Main Feature -->
+
+              <!-- <a href="#" class="btn-get-started">Get Started Today</a> -->
             </div>
           </div>
 
@@ -478,51 +360,36 @@
             <div class="features-grid">
               <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
                 <div class="icon-wrapper">
-                  <i class="bi bi-shield-check"></i>
+                  <i class="bi bi-bicycle"></i>
                 </div>
-                <h5>Enterprise Security</h5>
-                <p>Bank-level encryption and advanced security protocols to protect your sensitive business data.</p>
+                <h5>Bicicletas novas, usadas e antigas</h5>
+                <p>Do passeio ao alto desempenho, temos bikes para todos os estilos, incluindo modelos clássicos que marcaram época.</p>
               </div><!-- End Feature Card -->
 
               <div class="feature-card" data-aos="zoom-in" data-aos-delay="450">
                 <div class="icon-wrapper">
-                  <i class="bi bi-graph-up-arrow"></i>
+                  <i class="bi bi-gear-wide"></i>
                 </div>
-                <h5>Real-time Analytics</h5>
-                <p>Get instant insights with comprehensive dashboards and detailed reporting capabilities.</p>
+                <h5>Peças e acessórios</h5>
+                <p>Uma linha completa de componentes, equipamentos e acessórios para manter sua bicicleta sempre pronta e segura.</p>
               </div><!-- End Feature Card -->
 
               <div class="feature-card" data-aos="zoom-in" data-aos-delay="500">
                 <div class="icon-wrapper">
-                  <i class="bi bi-people"></i>
+                  <i class="bi bi-emoji-sunglasses"></i>
                 </div>
-                <h5>Team Collaboration</h5>
-                <p>Foster seamless teamwork with integrated communication and project management tools.</p>
+                <h5>Vestuário e segurança</h5>
+                <p>Capacetes, luvas, roupas técnicas e equipamentos de proteção que unem conforto, estilo e segurança em cada pedalada.</p>
               </div><!-- End Feature Card -->
 
               <div class="feature-card" data-aos="zoom-in" data-aos-delay="550">
                 <div class="icon-wrapper">
-                  <i class="bi bi-cloud-arrow-up"></i>
+                  <i class="bi bi-palette"></i>
                 </div>
-                <h5>Cloud Integration</h5>
-                <p>Seamlessly sync your data across all devices with our robust cloud infrastructure.</p>
+                <h5>Customizações e pinturas</h5>
+                <p>Personalize sua bike com cores, detalhes e acabamentos exclusivos, deixando ela do jeito que você sempre sonhou.</p>
               </div><!-- End Feature Card -->
 
-              <div class="feature-card" data-aos="zoom-in" data-aos-delay="600">
-                <div class="icon-wrapper">
-                  <i class="bi bi-gear"></i>
-                </div>
-                <h5>Easy Customization</h5>
-                <p>Tailor the platform to your unique business needs with flexible configuration options.</p>
-              </div><!-- End Feature Card -->
-
-              <div class="feature-card" data-aos="zoom-in" data-aos-delay="650">
-                <div class="icon-wrapper">
-                  <i class="bi bi-headset"></i>
-                </div>
-                <h5>24/7 Support</h5>
-                <p>Get expert assistance whenever you need it with our dedicated customer support team.</p>
-              </div><!-- End Feature Card -->
             </div>
           </div>
         </div>
@@ -531,63 +398,122 @@
 
     </section><!-- /Features Section -->
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
 
-      <div class="container">
+       <!-- Clients Section (marcas) -->
+        <section id="clients" class="clients section light-background">
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
+          <div class="container text-center">
+            
+            <h2>As marcas que confiamos:</h2>
+
+            <div class="swiper init-swiper" style="margin-top:40px">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 500
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": false
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 2,
+                      "spaceBetween": 40
+                    },
+                    "480": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 10
+                    },
+                    "640": {
+                      "slidesPerView": 4,
+                      "spaceBetween": 20
+                    },
+                    "992": {
+                      "slidesPerView": 6,
+                      "spaceBetween": 30
+                    }
+                  }
                 }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/clients-1.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-2.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-3.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-5.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-6.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-7.webp" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-8.webp" class="img-fluid" alt=""></div>
+              </script>
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="assets/img/clients/marca-absolute.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/marca-elleven.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/marca-shimano.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/marca-sense.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/marca-suntour.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/marca-kenda.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/marca-caloi.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/marca-sol.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/marca-kmc.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/marca-vzan.jpg" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/clients/marca-alfameq.jpg" class="img-fluid" alt=""></div>
+              </div>
+            </div>
+    
           </div>
-        </div>
+    
+        </section><!-- /Clients Section -->
 
-      </div>
+        <!-- Detalhe ciclista mulher -->
+        <section id="ciclista-mulher" class="d-flex align-items-center justify-content-center" style="padding: 0px; width: 100%;" >
+          <div class="containerx text-center" data-aos="fade-up" data-aos-delay="100">
+            <img class="img-fluid" src="assets/img/ciclista-mulher1.jpg" style="width: 100%;" >
+            <!-- <h1 class="text-white">Praticidade</h1> -->
+            <!-- <h2 style="color:var(--cor-amarelo)">Para sua maior comodidade<br />buscamos e entregamos sua bike em casa!</h2> -->
+          </div>
+        </section>
+        <!-- /Features Section -->
 
-    </section><!-- /Clients Section -->
+
+        <!-- Detalhe ciclista outro -->
+        <section id="transporte" class="d-flex align-items-center justify-content-center hide">
+          <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+            <!-- <h1 class="text-white">Praticidade</h1> -->
+            <!-- <h2 style="color:var(--cor-amarelo)">Para sua maior comodidade<br />buscamos e entregamos sua bike em casa!</h2> -->
+          </div>
+        </section>
+        <!-- /Features Section -->
+
+
+        <!-- Call To Action Section Instagram -->
+        <section id="call-to-action" class="call-to-action section dark-background" style="padding: 0px 0;">
+
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+            <div class="row align-items-center">
+    
+              <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                <div class="containerx text-center" data-aos="fade-up" data-aos-delay="100">
+                  <img class="img-fluid" src="assets/img/hand-smartphone1.jpg" >
+                </div>   
+              </div>
+
+              <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                <div class="cta-content">
+                  <h2>Não fique de fora!</h2>
+                  <p class="lead">Acompanhe nossas redes sociais e esteja sempre atualizado sobre promoções, lançamentos e tendências. Conecte-se conosco e descubra em primeira mão tudo o que preparamos para quem curte bike!</p>
+                  <div class="cta-buttons">
+                    <a href="https://www.instagram.com/pac_bikes/" target="_blank" class="btn btn-primary"><i class="bi bi-instagram"></i> Instagram</a>
+                    <a href="https://www.facebook.com/pontoamigodociclista/" target="_blank" class="btn btn-facebook"><i class="bi bi-facebook"></i> Facebook</a>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </section><!-- /Call To Action Section -->
+
+
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <section id="portfolio" class="portfolio section hide">
 
       <!-- Section Title -->
       <div class="container section-title">
@@ -739,7 +665,7 @@
     </section><!-- /Portfolio Section -->
 
     <!-- Pricing Section -->
-    <section id="pricing" class="pricing section light-background">
+    <section id="pricing" class="pricing section light-background hide">
 
       <!-- Section Title -->
       <div class="container section-title">
@@ -846,7 +772,7 @@
     </section><!-- /Pricing Section -->
 
     <!-- Faq Section -->
-    <section id="faq" class="faq section">
+    <section id="faq" class="faq section hide">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -1013,7 +939,7 @@
     </section><!-- /Faq Section -->
 
     <!-- Team Section -->
-    <section id="team" class="team section light-background">
+    <section id="team" class="team section light-background hide">
 
       <!-- Section Title -->
       <div class="container section-title">
@@ -1180,7 +1106,7 @@
     </section><!-- /Team Section -->
 
     <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
+    <section id="recent-posts" class="recent-posts section hide">
 
       <!-- Section Title -->
       <div class="container section-title">
@@ -1337,15 +1263,15 @@
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
       <!-- Section Title -->
-      <div class="container section-title">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <div class="container text-center p-5">
+        <h1>Contato e informações:</h2>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="contact-main-wrapper">
+        <div class="contact-main-wrapper row align-items-center">
           <div class="map-wrapper">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4000.6660997961635!2d-51.859819294764385!3d-29.785649006439684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951b851377747a8f%3A0xf81f716682d03200!2sPAC%20Bikes!5e0!3m2!1spt-BR!2sbr!4v1760641680950!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
           <div class="contact-content">
@@ -1355,8 +1281,8 @@
                   <i class="bi bi-geo-alt"></i>
                 </div>
                 <div class="contact-text">
-                  <h4>Location</h4>
-                  <p>8721 Broadway Avenue, New York, NY 10023</p>
+                  <h4>Localização:</h4>
+                  <p>Rodovia Aleixo Rocha da Silva 280, Taquari-RS</p>
                 </div>
               </div>
 
@@ -1365,8 +1291,8 @@
                   <i class="bi bi-envelope"></i>
                 </div>
                 <div class="contact-text">
-                  <h4>Email</h4>
-                  <p>info@examplecompany.com</p>
+                  <h4>Email:</h4>
+                  <p>aloisiopontoamigo@gmail.com</p>
                 </div>
               </div>
 
@@ -1375,8 +1301,8 @@
                   <i class="bi bi-telephone"></i>
                 </div>
                 <div class="contact-text">
-                  <h4>Call</h4>
-                  <p>+1 (212) 555-7890</p>
+                  <h4>Telefone:</h4>
+                  <p>(51)98019.6163</p>
                 </div>
               </div>
 
@@ -1385,13 +1311,14 @@
                   <i class="bi bi-clock"></i>
                 </div>
                 <div class="contact-text">
-                  <h4>Open Hours</h4>
-                  <p>Monday-Friday: 9AM - 6PM</p>
+                  <h4>Horário de atendimento:</h4>
+                  <p>Segunda-Sexta: 08:00 - 11:30 / 13:30 - 18:00</p>
+                  <p>Sábado: 08:00 - 12:00</p>
                 </div>
               </div>
             </div>
 
-            <div class="contact-form-container" data-aos="fade-up" data-aos-delay="400">
+            <div class="contact-form-container hide" data-aos="fade-up" data-aos-delay="400">
               <h3>Get in Touch</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing.</p>
 
@@ -1435,9 +1362,9 @@
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer">
 
-    <div class="container">
+    <div class="container hide">
       <div class="row gy-5">
 
         <div class="col-lg-4">
@@ -1533,7 +1460,7 @@
       </div>
     </div>
 
-    <div class="footer-bottom">
+    <div class="footer-bottom dark-background" style="background-color: #060606;">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">

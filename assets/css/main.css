@@ -162,6 +162,7 @@ h6 {
   line-height: 1;
 }
 
+
 .header .logo img {
   max-height: 100px;
   margin-right: 8px;
@@ -225,6 +226,11 @@ h6 {
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --nav-color: #ffffff;
+  height: 80px;
+}
+
+.scrolled .header img { 
+  height: 60px;
 }
 
 /* Index Page Header
@@ -281,7 +287,7 @@ h6 {
     font-size: 15px;
     padding: 0 2px;
     font-family: var(--nav-font);
-    font-weight: 400;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -513,7 +519,7 @@ h6 {
   color: var(--default-color);
   background: var(--background-color);
   font-size: 14px;
-  padding: 80px 0 0;
+  /* padding: 80px 0 0; */
   position: relative;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
@@ -713,7 +719,8 @@ h6 {
 }
 
 .footer .footer-bottom {
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  margin-top:0px;
   padding: 25px 0;
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
@@ -1006,7 +1013,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 95vh;
   position: relative;
   padding: 0;
   display: flex;
@@ -1168,6 +1175,18 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about {
+  background: url(../img/bg-about1.jpg) no-repeat right top;
+  background-size: contain;
+}
+
+@media (max-width: 768px) {
+  .about {
+    background: url(../img/bg-about1.jpg) no-repeat right bottom;
+    background-size: contain;
+  }
+}
+
 .about .about-img {
   position: relative;
   border-radius: 20px;
@@ -1301,6 +1320,9 @@ section,
   background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
   transform: translateY(-2px);
 }
+#about p {
+  font-size: 1.1rem;
+}
 
 @media (max-width: 991.98px) {
   .about .experience-badge {
@@ -1363,6 +1385,7 @@ section,
     font-size: 0.7rem;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1750,19 +1773,34 @@ section,
   font-size: 16px;
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  color: #fff;
 }
 
+/* Botão estilo Instagram */
 .call-to-action .cta-buttons .btn.btn-primary {
-  background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), #6c5ce7 50%) 100%);
-  color: var(--contrast-color);
-  box-shadow: 0 6px 20px color-mix(in srgb, var(--accent-color), transparent 60%);
+  background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  box-shadow: 0 6px 20px rgba(252, 176, 69, 0.4);
 }
 
 .call-to-action .cta-buttons .btn.btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 50%);
+  box-shadow: 0 8px 25px rgba(252, 176, 69, 0.6);
+  background: linear-gradient(135deg, #fcb045 0%, #fd1d1d 50%, #833ab4 100%);
 }
 
+/* Botão estilo Facebook */
+.call-to-action .cta-buttons .btn.btn-facebook {
+  background: linear-gradient(135deg, #1877F2 0%, #3b5998 100%);
+  box-shadow: 0 6px 20px rgba(24, 119, 242, 0.4);
+}
+
+.call-to-action .cta-buttons .btn.btn-facebook:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(24, 119, 242, 0.6);
+  background: linear-gradient(135deg, #3b5998 0%, #1877F2 100%);
+}
+
+/* Botão estilo transparente */
 .call-to-action .cta-buttons .btn.btn-outline {
   background: var(--surface-color);
   color: var(--default-color);
@@ -1805,6 +1843,10 @@ section,
 .features {
   position: relative;
   overflow: hidden;
+  background-color: #f1f1f1;
+  background: url(../img/bg-produtos1.jpg) no-repeat center;
+  background-size: cover;
+
 }
 
 .features::before {
@@ -2006,6 +2048,9 @@ section,
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
+.clients {
+  background: #fff;
+}
 .clients .swiper {
   padding: 10px 0;
 }
@@ -2951,6 +2996,8 @@ section,
 .contact {
   padding-top: 60px;
   padding-bottom: 60px;
+  background: url(../img/bg-contact.jpg) no-repeat right top;
+  background-size: cover;
 }
 
 .contact .contact-main-wrapper {
@@ -4777,6 +4824,9 @@ section,
 
 
 
+
+
+
 /*--------------------------------------------------------------
 # Tiago ADD
 --------------------------------------------------------------*/
@@ -4785,8 +4835,37 @@ section,
   display:none !important;
 }
 
+p {
+  margin-bottom: 1em !important;
+}
 
 
+/* --- TRANSPORTE DA BIKE --- */
+#transporte {
+  background: url("../img/bg-ciclista1.jpg") no-repeat center top fixed;
+  background-size: cover;
+  height: 500px;
+  /* min-height: 100vh;  ocupa a tela toda 
+  position: relative; */
+}
+#transporte h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+/* FIM --- TRANSPORTE DA BIKE --- */
 
+.logox {
+  text-align: center;
+}
+.logox img {
+  max-width: 250px;
+  z-index: 99 !important;
+  margin-top:-130px;
+  position: relative;
+}
 
-
+.swiper-slide  {
+  border:solid #ccc 1px;
+  border-radius: 5px;
+  padding: 5px 10px;
+ }
