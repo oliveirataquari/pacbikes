@@ -1075,7 +1075,7 @@ section,
   }
 }
 
-.hero .info h2 {
+.hero .info h2, .hero h1 {
   margin-bottom: 30px;
   padding-bottom: 30px;
   font-size: 56px;
