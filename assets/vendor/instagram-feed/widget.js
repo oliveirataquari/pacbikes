@@ -699,15 +699,15 @@ function timeAgo(dateInput) {
     const diffDays = Math.floor(diffHours / 24);
 
     if (diffDays >= 1) {
-        return diffDays + " " + (diffDays === 1 ? "day" : "dias") + " atrás.";
+        return diffDays + " " + (diffDays === 1 ? "Dia" : "dias") + " atrás.";
     }
 
     if (diffHours >= 1) {
-        return diffHours + " " + (diffHours === 1 ? "hour" : "horas") + " atrás.";
+        return diffHours + " " + (diffHours === 1 ? "hora" : "horas") + " atrás.";
     }
 
     if (diffMinutes >= 1) {
-        return diffMinutes + " " + (diffMinutes === 1 ? "minute" : "minutos") + " atrás.";
+        return diffMinutes + " " + (diffMinutes === 1 ? "minuto" : "minutos") + " atrás.";
     }
 
     return "Agora!";
