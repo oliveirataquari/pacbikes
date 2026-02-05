@@ -4910,4 +4910,6 @@ p {
  }
 
 
- 
+ .sk_branding  {
+  display: none !important;
+ }

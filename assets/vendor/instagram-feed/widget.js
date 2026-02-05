@@ -699,24 +699,24 @@ function timeAgo(dateInput) {
     const diffDays = Math.floor(diffHours / 24);
 
     if (diffDays >= 1) {
-        return diffDays + " " + (diffDays === 1 ? "day" : "days") + " ago";
+        return diffDays + " " + (diffDays === 1 ? "day" : "dias") + " atrás.";
     }
 
     if (diffHours >= 1) {
-        return diffHours + " " + (diffHours === 1 ? "hour" : "hours") + " ago";
+        return diffHours + " " + (diffHours === 1 ? "hour" : "horas") + " atrás.";
     }
 
     if (diffMinutes >= 1) {
-        return diffMinutes + " " + (diffMinutes === 1 ? "minute" : "minutes") + " ago";
+        return diffMinutes + " " + (diffMinutes === 1 ? "minute" : "minutos") + " atrás.";
     }
 
-    return "just now";
+    return "Agora!";
 }
 
 function formatDateMMM(dateInput) {
     const date = new Date(dateInput);
 
-    return new Intl.DateTimeFormat('en-US', {
+    return new Intl.DateTimeFormat('pt-BR', {
         month: 'short',
         day: 'numeric',
         year: 'numeric'
@@ -992,7 +992,7 @@ async function loadFeed(sk_instagram_feed) {
 
             if (enable_button && show_load_more_button == 1) {
                 post_items += "<div class='sk-ig-bottom-btn-container'>";
-                    post_items += "<button type='button' class='sk-ig-load-more-posts'>" + load_more_posts_text + "</button>";
+                    post_items += "<button type='button' class='sk-ig-load-more-posts'> Mais posts </button>";
                 post_items += "</div>";
             }
         }
@@ -1262,14 +1262,14 @@ function getFeedItem(val,sk_instagram_feed, data_position) {
                             var formattedDate = formatDateMMM(val.date_time_posted);
                             post_items += "<span class='sk-popup-post-date'>";
                                 post_items += timeAgo(val.date_time_posted);
-                            post_items += " â€¢ " + formattedDate;
+                            post_items += "  " + formattedDate;
                             post_items += "</span>";
                         }
                         post_items += "</p>";
                         if (getDsmSetting(sk_instagram_feed, "show_popup_follow_link") == 1) {
                             
                             post_items += "<span class='sk-instagram-feed-follow-link-container'>";
-                            post_items += "<a class='href_status_trigger sk-instagram-feed-follow-link' href='https://www.instagram.com/" + val.owner_username + "/' target='" + openLinkTab() + "'>" + follow_text + "</a>";
+                            post_items += "<a class='href_status_trigger sk-instagram-feed-follow-link' href='https://www.instagram.com/" + val.owner_username + "/' target='" + openLinkTab() + "'> Seguir </a>";
                             post_items += "</span>";
 
                         }
@@ -1310,7 +1310,7 @@ function getFeedItem(val,sk_instagram_feed, data_position) {
                                 post_items += "<span style='font-family: FontAwesome !important; font-size: 18px;' aria-hidden='true'>&#xf16d;</span>";
                             }
 
-                            post_items += `<span class="view-on-ig-text">${view_on_instagram_text}</span>`;
+                            post_items += `<span class="view-on-ig-text"> Veja isto no Instagram </span>`;
                             post_items += "</a>";
                             post_items += "</span>";
                         }
@@ -2932,7 +2932,7 @@ function skGetBranding(sk_, user_info) {
         }
 
         html += "<div class='sk_branding' style='padding:10px; display:block !important; text-align:center; text-decoration: none !important; color:#555; font-family:" + fontFamily + "; font-size:15px;'>";
-            html += "<a "+nofollow_attribute+" class='tutorial_link' href='"+user_info.tutorial_link+"' target='_blank' style='text-underline-position:under; color:" + link_color + ";font-size:15px; display:block !important;'>";
+            html += "<a "+nofollow_attribute+" class='tutorial_link' href='"+user_info.tutorial_link+"' target='_blank' style='text-underline-position:under; color:" + link_color + ";font-size:15px; display:none !important;'>";
                 
                 if(linkedin_widgets.includes(user_info.type) && user_info.embed_id % 2 == 1){
                     html += "Embed LinkedIn Feed on your ";
