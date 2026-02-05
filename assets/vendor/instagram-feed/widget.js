@@ -699,7 +699,7 @@ function timeAgo(dateInput) {
     const diffDays = Math.floor(diffHours / 24);
 
     if (diffDays >= 1) {
-        return diffDays + " " + (diffDays === 1 ? "Dia" : "dias") + " atrás.";
+        return diffDays + " " + (diffDays === 1 ? "dia" : "dias") + " atrás.";
     }
 
     if (diffHours >= 1) {
