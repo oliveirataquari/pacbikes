@@ -35,6 +35,17 @@ loadCssFile(app_url + "libs/js/swiper/swiper.min.css");
 loadCssFile(app_url + "libs/js/swiper/swiper.css"); 
 loadCssFile(app_url + "libs/js/magnific-popup/magnific-popup.css");
 
+// CSS adicional Tiago 
+const style = document.createElement("style");
+style.textContent = `
+  .hide2 {
+    display:none !important;
+  }
+`;
+document.head.appendChild(style);
+
+
+
 loadCssFile("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 function loadCssFile(filename){
@@ -764,7 +775,7 @@ function formatDateMMM(dateInput) {
         if(getDsmSetting(sk_instagram_feed,'layout') == 3){
             is_slider_layout = "sk-slider-layout-info";
         }
-        post_items += "<div class='instagram-user-root-container "+is_slider_layout+"'>";
+        post_items += "<div class='instagram-user-root-container hide2 "+is_slider_layout+"'>";
             var width = "style='width:100%;'";
             data.bio.username = data.bio.username ? data.bio.username : getDsmSetting(sk_instagram_feed,'username');
             if (show_profile_picture == 1) {
