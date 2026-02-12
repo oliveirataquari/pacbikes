@@ -1059,6 +1059,12 @@ section,
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+  }
+}
+
 .hero .info {
   position: relative;
   inset: 0;
@@ -1079,6 +1085,12 @@ section,
   font-size: 56px;
   font-weight: 700;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size:36px;
+  }
 }
 
 .hero .info h2:after {
@@ -4899,6 +4911,13 @@ p {
   z-index: 99 !important;
   margin-top:-110px;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .logox img {
+    margin-top:-80px;
+    max-width: 180px;
+  }
 }
 
 .swiper-slide  {
